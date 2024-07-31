@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "daisyui";
+
+input[type="checkbox"]:checked ~ * {
+  --tw-bg-opacity: 1;
+  background-color: rgba(31, 41, 55, var(--tw-bg-opacity)); /* background-color for dark theme */
+  color: white; /* text color for dark theme */
+}
